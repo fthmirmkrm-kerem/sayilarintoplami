@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+
+int topla(int dizi[], int n) {
+    int toplam = 0;
+    for (int i = 0; i < n; i++)
+        toplam += dizi[i];
+    return toplam;
+}
+
+int main() {
+    int sayilar[] = {10, 20, 30, 40, 50}; 
+    int n = sizeof(sayilar) / sizeof(sayilar[0]);
+
+    cout << "Toplam: " << topla(sayilar, n);
+    return 0;
+}
